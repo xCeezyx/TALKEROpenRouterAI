@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+    <string id="talker_topics_1">
+        <text>a mythical stalker known only as 'Demonized', who they say ventures to the deepest parts of the zone to bring back artifacts free of charge for those who have a worthy purpose for them.</text>
+    </string>
+    <string id="talker_topics_2">
+        <text>the rumors of a madman living on top of one of the piles of trash in garbage, killing anyone he encounters on sight. A man so vile he was banished from the renegades.</text>
+    </string>
+    <string id="talker_topics_3">
+        <text>why Barman uses such depressing music to advertise his bar in Rostok.</text>
+    </string>
+    <string id="talker_topics_4">
+        <text>the latest anomaly sightings.</text>
+    </string>
+    <string id="talker_topics_5">
+        <text>recent encounters with mutants.</text>
+    </string>
+    <string id="talker_topics_6">
+        <text>rumors about hidden artifacts.</text>
+    </string>
+    <string id="talker_topics_7">
+        <text>stories about the Zone's mysteries.</text>
+    </string>
+    <string id="talker_topics_8">
+        <text>the condition of gear and equipment.</text>
+    </string>
+    <string id="talker_topics_9">
+        <text>the weather and its effects in the Zone.</text>
+    </string>
+    <string id="talker_topics_10">
+        <text>trade and bartering opportunities.</text>
+    </string>
+    <string id="talker_topics_11">
+        <text>tales of close calls and survival.</text>
+    </string>
+    <string id="talker_topics_12">
+        <text>not remembering what life is like outside the zone.</text>
+    </string>
+    <string id="talker_topics_13">
+        <text>reminiscing about life outside the Zone.</text>
+    </string>
+    <string id="talker_topics_14">
+        <text>Rumors of a hidden treasure in the Dark Valley.</text>
+    </string>
+    <string id="talker_topics_15">
+        <text>The eerie sounds of the Zone at night.</text>
+    </string>
+    <string id="talker_topics_16">
+        <text>Latest mutant sightings.</text>
+    </string>
+    <string id="talker_topics_17">
+        <text>Strange markings in Pripyat buildings.</text>
+    </string>
+    <string id="talker_topics_18">
+        <text>Monolith faction's fanaticism and their base in the Red Forest.</text>
+    </string>
+    <string id="talker_topics_19">
+        <text>Survival strategies during emissions.</text>
+    </string>
+    <string id="talker_topics_20">
+        <text>The legend of the "Wish Granter" at Chernobyl NPP.</text>
+    </string>
+    <string id="talker_topics_21">
+        <text>The deadly anomalies in the Cordon.</text>
+    </string>
+    <string id="talker_topics_22">
+        <text>Combat tips against Bloodsuckers.</text>
+    </string>
+    <string id="talker_topics_23">
+        <text>Strelok and the mysterious Lab X-18.</text>
+    </string>
+    <string id="talker_topics_24">
+        <text>Artifacts and their effects on STALKERs.</text>
+    </string>
+    <string id="talker_topics_25">
+        <text>Scarcity of supplies in the Zone.</text>
+    </string>
+    <string id="talker_topics_26">
+        <text>a recent mission.</text>
+    </string>
+    <string id="talker_topics_27">
+        <text>a recent loss.</text>
+    </string>
+    <string id="talker_topics_28">
+        <text>a recent victory.</text>
+    </string>
+    <string id="talker_topics_29">
+        <text>a recent close call.</text>
+    </string>
+    <string id="talker_topics_30">
+        <text>the quality of the available food</text>
+    </string>
+    <string id="talker_topics_31">
+        <text>the quality of the available beds</text>
+    </string>
+    <string id="talker_topics_32">
+        <text>upcoming weather forecast.</text>
+    </string>
+    <string id="talker_topics_33">
+        <text>the latest campfire stories.</text>
+    </string>
+    <string id="talker_topics_34">
+        <text>an interesting artifact find.</text>
+    </string>
+    <string id="talker_topics_35">
+        <text>the mysterious emissions.</text>
+    </string>
+    <string id="talker_topics_36">
+        <text>equipment maintenance tips.</text>
+    </string>
+    <string id="talker_topics_37">
+        <text>best hiding spots during anomalies.</text>
+    </string>
+    <string id="talker_topics_38">
+        <text>strategies for avoiding military checkpoints.</text>
+    </string>
+    <string id="talker_topics_39">
+        <text>the strange radio broadcasts in the Zone.</text>
+    </string>    
+    <string id="talker_topics_40">
+        <text>the reliability of Geiger counters.</text>
+    </string>
+    <string id="talker_topics_41">
+        <text>favorite stashes for hiding loot.</text>
+    </string>
+    <string id="talker_topics_42">
+        <text>memories of the outside world.</text>
+    </string>
+    <string id="talker_topics_43">
+        <text>the best routes through the Zone.</text>
+    </string>
+    <string id="talker_topics_44">
+        <text>rumors of an undiscovered lab in the Zone.</text>
+    </string>
+    <string id="talker_topics_45">
+        <text>mutant tracks nearby.</text>
+    </string>
+    <string id="talker_topics_46">
+        <text>new anomalies appearing in the area</text>
+    </string>
+    <string id="talker_topics_47">
+        <text>strange lights seen in the night sky over Yantar.</text>
+    </string>
+    <string id="talker_topics_48">
+        <text>the value of artifacts in the current market.</text>
+    </string>
+    <string id="talker_topics_49">
+        <text>recent attacks by Bandits near the Dark Valley.</text>
+    </string>
+    <string id="talker_topics_50">
+        <text>the eerie silence in Pripyat.</text>
+    </string>
+    <string id="talker_topics_51">
+        <text>an unexplained phenomenon at the Chernobyl NPP.</text>
+    </string>
+    <string id="talker_topics_52">
+        <text>the strange behavior of wildlife in the Zone.</text>
+    </string>
+    <string id="talker_topics_53">
+        <text>the scarcity of ammunition and supplies.</text>
+    </string>
+    <string id="talker_topics_54">
+        <text>rumors of a hidden treasure in the Agroprom Underground.</text>
+    </string>    
+    <string id="talker_topics_55">
+        <text>how hungry you are.</text>
+    </string>    
+    <string id="talker_topics_56">
+        <text>the Zone's impact on one's dreams and nightmares.</text>
+    </string>
+    <string id="talker_topics_57">
+        <text>recent clashes with an enemy faction.</text>
+    </string>
+    <string id="talker_topics_58">
+        <text>tricks for navigating the underground tunnels in the Zone.</text>
+    </string>
+    <string id="talker_topics_59">
+        <text>the legend of the "Stone Flower" artifact.</text>
+    </string>
+    <string id="talker_topics_60">
+        <text>survival tips for rookie STALKERs.</text>
+    </string>
+    <string id="talker_topics_61">
+        <text>unexplained disappearances at the Jupiter Plant.</text>
+    </string>
+    <string id="talker_topics_62">
+        <text>the eerie beauty of the Zone's landscapes.</text>
+    </string>
+    <string id="talker_topics_63">
+        <text>the significance of strange anomalies in Zaton.</text>
+    </string>
+    <string id="talker_topics_64">
+        <text>favorite drinking spots in the Zone.</text>
+    </string>
+    <string id="talker_topics_65">
+        <text>strange rumors about a talking artifact.</text>
+    </string>
+    <string id="talker_topics_66">
+        <text>recent sightings of the Controller mutants.</text>
+    </string>
+    <string id="talker_topics_67">
+        <text>the mystery of the Brain Scorcher's origins.</text>
+    </string>
+    <string id="talker_topics_68">
+        <text>High radiation levels are killing us.</text>
+    </string>
+    <string id="talker_topics_69">
+        <text>Traders' prices are outrageous.</text>
+    </string>
+    <string id="talker_topics_70">
+        <text>Bloodsuckers are a nightmare.</text>
+    </string>
+    <string id="talker_topics_71">
+        <text>Ever-changing anomalies are deadly.</text>
+    </string>
+    <string id="talker_topics_72">
+        <text>We need better protection from emissions.</text>
+    </string>
+    <string id="talker_topics_73">
+        <text>Mutant attacks are a constant threat.</text>
+    </string>
+    <string id="talker_topics_74">
+        <text>Mutant dogs are getting aggressive.</text>
+    </string>
+    <string id="talker_topics_75">
+        <text>Safe sleep spots are scarce.</text>
+    </string>
+    <string id="talker_topics_76">
+        <text>Zone messes with our minds.</text>
+    </string>
+    <string id="talker_topics_77">
+        <text>Faction conflicts make survival tough.</text>
+    </string>
+    <string id="talker_topics_78">
+        <text>Deadly emissions need fixing.</text>
+    </string>
+    <string id="talker_topics_79">
+        <text>We can't trust anyone here.</text>
+    </string>
+    <string id="talker_topics_80">
+        <text>how poorly you have slept recently.</text>
+    </string>
+    <string id="talker_topics_81">
+        <text>what you will do once you get rich</text>
+    </string>
+    <string id="talker_topics_82">
+        <text>how much you hate mutant boars</text>
+    </string>
+    <string id="talker_topics_83">
+        <text>how you've been having nightmares since facing a controller</text>
+    </string>
+    <string id="talker_topics_84">
+        <text>Trading routes and profitable deals.</text>
+    </string>
+    <string id="talker_topics_85">
+        <text>The importance of keeping your gear in good condition.</text>
+    </string>
+    <string id="talker_topics_86">
+        <text>Sharing advice on effective weapon modifications.</text>
+    </string>
+    <string id="talker_topics_87">
+        <text>Comparing the reliability of various weapons.</text>
+    </string>
+    <string id="talker_topics_88">
+        <text>Tips for staying hidden from hostile factions.</text>
+    </string>
+    <string id="talker_topics_89">
+        <text>Discussing the merits of different artifact detectors.</text>
+    </string>
+    <string id="talker_topics_90">
+        <text>Favorite spots for finding valuable artifacts.</text>
+    </string>
+    <string id="talker_topics_91">
+        <text>Stories of epic battles and near-death experiences.</text>
+    </string>
+    <string id="talker_topics_92">
+        <text>The best ways to deal with a pack of mutant dogs.</text>
+    </string>
+    <string id="talker_topics_93">
+        <text>Comparing the merits of various types of ammunition.</text>
+    </string>
+    <string id="talker_topics_94">
+        <text>Opinions on the reliability of Geiger counters.</text>
+    </string>
+    <string id="talker_topics_95">
+        <text>Sharing information on hidden stashes and caches.</text>
+    </string>
+    <string id="talker_topics_96">
+        <text>Tales of encounters with friendly Loners.</text>
+    </string>
+    <string id="talker_topics_97">
+        <text>Discussing the enigmatic Strelok and his motivations.</text>
+    </string>
+    <string id="talker_topics_98">
+        <text>Tactics for dealing with the deadly anomalies.</text>
+    </string>
+    <string id="talker_topics_99">
+        <text>Opinions on the quality of Zone-produced vodka.</text>
+    </string>
+    <string id="talker_topics_100">
+        <text>Reminiscing about life before the Zone.</text>
+    </string>
+    <string id="talker_topics_101">
+        <text>The allure of the Zone's mysteries and dangers.</text>
+    </string>
+    <string id="talker_topics_102">
+        <text>The impact of the Zone on dreams and nightmares.</text>
+    </string>
+    <string id="talker_topics_103">
+        <text>Favorite escape routes and shortcuts in the Zone.</text>
+    </string>
+    <string id="talker_topics_104">
+        <text>Rumors of an uncharted area with untapped resources.</text>
+    </string>
+    <string id="talker_topics_105">
+        <text>Thoughts on the Zone's ever-changing landscape.</text>
+    </string>
+    <string id="talker_topics_106">
+        <text>Sharing strategies for surviving military checkpoints.</text>
+    </string>
+    <string id="talker_topics_107">
+        <text>Discussing the eerie beauty of the Zone's desolation.</text>
+    </string>
+    <string id="talker_topics_108">
+        <text>Opinions on the ethics of artifact hunting.</text>
+    </string>    
+    <string id="talker_topics_109">
+        <text>How all the guns you looted recently are absolutely terribly maintained.</text>
+    </string>    
+</string_table>

@@ -1,0 +1,62 @@
+package.path = package.path .. ";./bin/lua/?.lua;"
+local log = require('framework.logger')
+local game = require("infra.game_adapter")
+local interface = require("interface.interface")
+
+----------------------------------------------------------------------------------------------------
+-- Constants
+----------------------------------------------------------------------------------------------------
+PSY_STORM = "psy storm"
+EMISSION = "emissions"
+START = "starting"
+END = "ending"
+
+----------------------------------------------------------------------------------------------------
+-- Function
+----------------------------------------------------------------------------------------------------
+
+function create_emission_event(typ, status)
+    local unformatted_description = "An %s is %s!"
+    log.info(unformatted_description, typ, status)
+    local witnesses = game.get_characters_near_player(200)
+    interface.register_game_event(unformatted_description, {typ, status}, witnesses, true)
+end
+
+-- Technically this is triggered by more than just emissions, but our name filter takes care of that
+function on_emission(name)
+    -- PSY STORMS
+    if name == "psi_storm_start" then
+        create_emission_event(PSY_STORM, START)
+    elseif name == "psi_storm_end" then
+        create_emission_event(PSY_STORM, END)
+    -- EMISSIONS
+    elseif name == "emission_start" then
+        create_emission_event(EMISSION, START)
+    elseif name == "emission_end" then
+        create_emission_event(EMISSION, END)
+    end
+end
+
+----------------------------------------------------------------------------------------------------
+-- Set up
+----------------------------------------------------------------------------------------------------
+
+function safe_on_player_interaction(typ, obj, name)
+    local status, err = pcall(on_emission, name)
+    if not status then
+        log.error("Error in on_emission: %s", err)
+    end
+end
+
+function on_game_start()
+    RegisterScriptCallback("actor_on_interaction", safe_on_player_interaction)
+end
+
+-- Module loaded check
+function is_loaded()
+    return true
+end
+
+function insert_interface(new_interface)
+    interface = new_interface
+end

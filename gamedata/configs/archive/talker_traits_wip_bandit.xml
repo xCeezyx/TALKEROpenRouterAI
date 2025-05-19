@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+    <!-- Bandit traits -->
+    <string id="talker_traits_bandit_1">
+        <text>devious</text>
+    </string>
+    <string id="talker_traits_bandit_2">
+        <text>sly</text>
+    </string>
+    <string id="talker_traits_bandit_3">
+        <text>untrustworthy</text>
+    </string>
+    <string id="talker_traits_bandit_4">
+        <text>opportunistic</text>
+    </string>
+    <string id="talker_traits_bandit_5">
+        <text>aggressive</text>
+    </string>
+    <string id="talker_traits_bandit_6">
+        <text>greedy</text>
+    </string>
+    <string id="talker_traits_bandit_7">
+        <text>unpredictable</text>
+    </string>
+    <string id="talker_traits_bandit_8">
+        <text>reckless</text>
+    </string>
+    <string id="talker_traits_bandit_9">
+        <text>intimidating</text>
+    </string>
+    <string id="talker_traits_bandit_10">
+        <text>rowdy</text>
+    </string>
+    <string id="talker_traits_bandit_11">
+        <text>ruthless</text>
+    </string>
+    <string id="talker_traits_bandit_12">
+        <text>boisterous</text>
+    </string>
+    <string id="talker_traits_bandit_13">
+        <text>brutal</text>
+    </string>
+    <string id="talker_traits_bandit_14">
+        <text>merciless</text>
+    </string>
+    <string id="talker_traits_bandit_15">
+        <text>callous</text>
+    </string>
+    <string id="talker_traits_bandit_16">
+        <text>chaotic</text>
+    </string>
+    <string id="talker_traits_bandit_17">
+        <text>disloyal</text>
+    </string>
+    <string id="talker_traits_bandit_18">
+        <text>dangerous</text>
+    </string>
+    <string id="talker_traits_bandit_19">
+        <text>cunning</text>
+    </string>
+    <string id="talker_traits_bandit_20">
+        <text>hostile</text>
+    </string>
+    <string id="talker_traits_bandit_21">
+        <text>arrogant</text>
+    </string>
+    <string id="talker_traits_bandit_22">
+        <text>suspicious</text>
+    </string>
+    <string id="talker_traits_bandit_23">
+        <text>volatile</text>
+    </string>
+    <string id="talker_traits_bandit_24">
+        <text>destructive</text>
+    </string>
+    <string id="talker_traits_bandit_25">
+        <text>crude</text>
+    </string>
+    <string id="talker_traits_bandit_26">
+        <text>vengeful</text>
+    </string>
+    <string id="talker_traits_bandit_27">
+        <text>conniving</text>
+    </string>
+    <string id="talker_traits_bandit_28">
+        <text>menacing</text>
+    </string>
+    <string id="talker_traits_bandit_29">
+        <text>irresponsible</text>
+    </string>
+    <string id="talker_traits_bandit_30">
+        <text>treacherous</text>
+    </string>
+    <string id="talker_traits_bandit_31">
+        <text>insidious</text>
+    </string>
+    <string id="talker_traits_bandit_32">
+        <text>selfish</text>
+    </string>
+    <string id="talker_traits_bandit_33">
+        <text>impulsive</text>
+    </string>
+    <string id="talker_traits_bandit_34">
+        <text>disrespectful</text>
+    </string>
+    <string id="talker_traits_bandit_35">
+        <text>sneaky</text>
+    </string>
+</string_table>

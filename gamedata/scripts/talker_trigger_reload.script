@@ -1,0 +1,64 @@
+--------------------------------------------------------------------------------------------
+-- PLAYER RELOADS
+-- Occasional comments by NPCs, or enemies saying that they can push the player
+--------------------------------------------------------------------------------------------
+package.path = package.path .. ";./bin/lua/?.lua;"
+local log = require('framework.logger')
+local game = require("infra.game_adapter")
+local interface = require("interface.interface")
+
+----------------------------------------------------------------------------------------------------
+-- Constants
+----------------------------------------------------------------------------------------------------
+local NOTICE_CHANCE = 0.9
+
+----------------------------------------------------------------------------------------------------
+-- Function
+----------------------------------------------------------------------------------------------------
+
+-- Player reload event handler
+function on_player_reloads_weapon()
+    log.debug("Player is reloading weapon")
+    local unformatted_description = "%s is reloading %s"
+
+    -- ignore this 90% of the time
+    if math.random() < NOTICE_CHANCE then
+        log.debug("Ignoring reload event")
+        return
+    end
+
+    -- Create event objects
+    local player_character = game.get_player_character()
+    local player_weapon = game.get_player_weapon()
+    local witnesses = game.get_characters_near_player()
+
+    interface.register_game_event(unformatted_description, {player_character, player_weapon}, witnesses, true)
+
+    log.info("Reload event registered")
+end
+
+----------------------------------------------------------------------------------------------------
+-- Set up
+----------------------------------------------------------------------------------------------------
+
+function safe_on_player_reloads_weapon()
+    local status, err = pcall(on_player_reloads_weapon)
+    if not status then
+        log.error("Error in on_player_reloads_weapon: %s", err)
+    end
+end
+
+-- Game start callback
+function on_game_start()
+    -- RegisterScriptCallback("actor_on_weapon_reload", safe_on_player_reloads_weapon)
+end
+
+-- Module loaded check
+function is_loaded()
+    return true
+end
+
+function insert_mocks(mock_interface, mock_game)
+    interface = mock_interface
+    game = mock_game
+end

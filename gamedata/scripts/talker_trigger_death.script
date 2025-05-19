@@ -1,0 +1,64 @@
+package.path = package.path .. ";./bin/lua/?.lua;"
+local interface = require("interface.interface")
+local game = require("infra.game_adapter")
+local log = require('framework.logger')
+
+--------------------------------------------------------------------------------------------
+-- UTILS
+--------------------------------------------------------------------------------------------
+
+local function join_tables(table1, table2)
+    local result = {}
+    for _, value in ipairs(table1) do
+        table.insert(result, value)
+    end
+    for _, value in ipairs(table2) do
+        table.insert(result, value)
+    end
+    return result
+end
+
+--------------------------------------------------------------------------------------------
+-- CALLBACK
+--------------------------------------------------------------------------------------------
+
+function on_creature_death(victim_obj, killer_obj)
+    local unformatted_description = "%s was killed by %s!"
+    -- get and combine witnesses
+    local witnesses_near_victim = game.get_characters_near(victim_obj)
+    local witnesses_near_killer = game.get_characters_near(killer_obj)
+    local witnesses = join_tables(witnesses_near_victim, witnesses_near_killer)
+    -- make characters
+    local killer = game.create_character(killer_obj)
+    local victim = game.create_character(victim_obj)
+    -- decide if the kill is important
+    local important = false -- TODO mechanism to decide if kill is important
+    -- send event to mod
+    interface.register_game_event(unformatted_description, {victim, killer}, witnesses, important)
+end
+
+--------------------------------------------------------------------------------------------
+-- Bubble Wrap
+--------------------------------------------------------------------------------------------
+
+local function safe_on_creature_death(victim_obj, killer_obj)
+    local status, err = pcall(function()
+        on_creature_death(victim_obj, killer_obj)
+    end)
+    if not status then
+        log.error("Error in victim_on_death_callback: " .. err)
+    end
+end
+
+--------------------------------------------------------------------------------------------
+-- On Game Start
+--------------------------------------------------------------------------------------------
+
+function on_game_start()
+    RegisterScriptCallback("npc_on_death_callback", safe_on_creature_death)
+    RegisterScriptCallback("monster_on_death_callback", safe_on_creature_death)
+end
+
+function is_loaded()
+    return true
+end

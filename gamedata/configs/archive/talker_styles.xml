@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<!-- Determines the speaking styles of factions -->
+<!-- The prompts are inserter like so: The NPC is told to "comment in a (STYLE) manner" -->
+
+<string_table>
+    <string id="talker_twist"> <!-- Added to the end of every single prompt -->
+        <text>Dont be too agreeable.</text>
+    </string>
+    <string id="talker_player_description"> <!-- Custom player description -->
+        <text>talkerIgnore</text> <!-- talkerIgnore gets ignored, empty string crashes the game -->
+    </string>
+    <!-- The following are used for the "comment in a (STYLE) manner" prompts -->
+    <string id="talker_style_killer"> <!-- Mercs FYI -->
+        <text>tactical</text>
+    </string>
+    <string id="talker_style_dolg">  <!-- DUTY FYI -->
+        <text>authoritative, stern</text>
+    </string>
+    <string id="talker_style_freedom">
+        <text>relaxed, stoner</text>
+    </string>
+    <string id="talker_style_bandit">
+        <text>vatnik</text>
+    </string>
+    <string id="talker_style_monolith">
+        <text>fanatical, cryptic</text>
+    </string>
+    <string id="talker_style_stalker">
+        <text>plain-spoken</text>
+    </string>
+    <string id="talker_style_csky">
+        <text>plain-spoken</text>
+    </string>
+    <string id="talker_style_ecolog">
+        <text>ecologist</text> <!-- Make this worded any more strongly and they are incomprehensible -->
+    </string>
+    <string id="talker_style_army">
+        <text>relucant, undisciplined</text> <!-- TODO review and make more dynamic -->
+    </string>
+    <string id="talker_style_renegade">
+        <text>despicable</text> <!-- Number one source of rejected requests! Worth it! -->
+    </string>
+    <string id="talker_style_trader">
+        <text>persuasive, smooth</text>
+    </string>
+    <string id="talker_style_greh">  <!-- SIN FYI -->
+        <text>creepy, possessed</text>
+    </string>
+    <string id="talker_style_isg">
+        <text>professional, formal</text>
+    </string>
+    <string id="talker_style_zombied">
+        <text>incoherent, groaning</text>
+    </string>
+    <!-- "The boars are speaking to me again"  -->
+    <string id="talker_style_monster"> <!-- Triggers for all monsters, currently used as a joke, later used for burers and controller-->
+        <text>incredibly polite</text> <!-- barely human, unintelligble  -->
+    </string>
+
+    <!-- These are the styles for the player, when they speak -->
+    <string id="talker_style_actor_killer"> <!-- Mercs FYI -->
+        <text>tactical</text>
+    </string>
+    <string id="talker_style_actor_dolg">  <!-- DUTY FYI -->
+        <text>authoritative, stern</text>
+    </string>
+    <string id="talker_style_actor_freedom">
+        <text>relaxed, stoner</text>
+    </string>
+    <string id="talker_style_actor_bandit">
+        <text>vatnik</text>
+    </string>
+    <string id="talker_style_actor_monolith">
+        <text>fanatical, cryptic</text>
+    </string>
+    <string id="talker_style_actor_stalker">
+        <text>plain-spoken</text>
+    </string>
+    <string id="talker_style_actor_csky">
+        <text>plain-spoken</text>
+    </string>
+    <string id="talker_style_actor_ecolog">
+        <text>ecologist</text>
+    </string>
+    <string id="talker_style_actor_army">
+        <text>military</text>
+    </string>
+    <string id="talker_style_actor_renegade">
+        <text>aggressive, despicable</text>
+    </string>
+    <string id="talker_style_actor_trader">
+        <text>persuasive, smooth</text>
+    </string>
+    <string id="talker_style_actor_greh">
+        <text>creepy, possessed</text>
+    </string>
+    <string id="talker_style_actor_isg">
+        <text>professional, formal</text>
+    </string>
+    <string id="talker_style_actor_zombied">
+        <text>incoherent, groaning</text>
+    </string>
+    <string id="talker_style_actor_monster">  <!-- Will probably trigger on that upcoming controller mod  -->
+        <text>incredibly polite</text> <!-- barely human, unintelligble  -->
+    </string>
+</string_table>

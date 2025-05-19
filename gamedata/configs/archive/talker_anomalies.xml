@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+    <string id="talker_zone_mine_acidic_weak">
+        <text>a weak gas anomaly</text>
+    </string>
+    <string id="talker_zone_mine_acidic_average">
+        <text>a gas anomaly</text>
+    </string>
+    <string id="talker_zone_mine_acidic_strong">
+        <text>a strong gas anomaly</text>
+    </string>
+    <string id="talker_zone_mine_electric_weak">
+        <text>a weak electrical anomaly</text>
+    </string>
+    <string id="talker_zone_mine_electric_average">
+        <text>an electrical anomaly</text>
+    </string>
+    <string id="talker_zone_mine_electric_strong">
+        <text>a strong electrical anomaly</text>
+    </string>
+    <string id="talker_zone_mine_gravitational_weak">
+        <text>a weak gravitational anomaly</text>
+    </string>
+    <string id="talker_zone_mine_gravitational_average">
+        <text>a gravitational anomaly</text>
+    </string>
+    <string id="talker_zone_mine_gravitational_strong">
+        <text>a strong gravitational anomaly</text>
+    </string>
+    <string id="talker_zone_mine_thermal_weak">
+        <text>a weak thermal anomaly</text>
+    </string>
+    <string id="talker_zone_mine_thermal_average">
+        <text>a thermal anomaly</text>
+    </string>
+    <string id="talker_zone_mine_thermal_strong">
+        <text>a strong thermal anomaly</text>
+    </string>
+	<string id="talker_zone_mine_steam_weak">
+        <text>a weak steam anomaly</text>
+    </string>
+    <string id="talker_zone_mine_steam_average">
+        <text>an steam anomaly</text>
+    </string>
+    <string id="talker_zone_mine_steam_strong">
+        <text>a strong steam anomaly</text>
+    </string>
+    <string id="talker_zone_mine_acidic_big">
+        <text>a large acidic anomaly</text>
+    </string>
+    <string id="talker_zone_mine_chemical_weak">
+        <text>a weak chemical anomaly</text>
+    </string>
+    <string id="talker_zone_mine_chemical_average">
+        <text>an chemical anomaly</text>
+    </string>
+    <string id="talker_zone_mine_chemical_strong">
+        <text>a strong chemical anomaly</text>
+    </string>
+    <string id="talker_zone_buzz_weak">
+        <text>a weak buzzing anomaly</text>
+    </string>
+    <string id="talker_zone_buzz_average">
+        <text>an buzzing anomaly</text>
+    </string>
+    <string id="talker_zone_buzz_strong">
+        <text>a strong buzzing anomaly</text>
+    </string>
+    <string id="talker_zone_mine_static_weak">
+        <text>a weak static anomaly</text>
+    </string>
+    <string id="talker_zone_mine_static_average">
+        <text>an static anomaly</text>
+    </string>
+    <string id="talker_zone_mine_static_strong">
+        <text>a strong static anomaly</text>
+    </string>
+    <string id="talker_zone_witches_galantine_weak">
+        <text>a weak toxic anomaly</text>
+    </string>
+    <string id="talker_zone_witches_galantine_average">
+        <text>a toxic anomaly</text>
+    </string>
+    <string id="talker_zone_witches_galantine_strong">
+        <text>a very toxic anomaly</text>
+    </string>
+    <string id="talker_zone_mine_gravitational_big">
+        <text>a large gravitational anomaly</text>
+    </string>
+    <string id="talker_zone_vortex">
+        <text>a vortex anomaly</text>
+    </string>
+    <string id="talker_zone_gravi_zone">
+        <text>a gravitational zone anomaly</text>
+    </string>
+    <string id="talker_zone_zharka_static_weak">
+        <text>a weak zharka static anomaly</text>  	<!-- The fuck is zharka? -->
+    </string>
+    <string id="talker_zone_zharka_static_average">
+        <text>an zharka static anomaly</text> 		<!-- The fuck is zharka? -->
+    </string>
+    <string id="talker_zone_zharka_static_strong">
+        <text>a strong zharka static anomaly</text>  <!-- The fuck is zharka? -->
+    </string>
+    <string id="talker_zone_field_radioactive">
+        <text>a radioactive field</text>
+    </string>
+    <string id="talker_zone_field_radioactive_weak">
+        <text>a weakly radioactive field</text>
+    </string>
+    <string id="talker_zone_field_radioactive_average">
+        <text>an averagely radioactive field</text>
+    </string>
+    <string id="talker_zone_field_radioactive_strong">
+        <text>a strongly radioactive field</text>
+    </string>
+    <string id="talker_zone_radioactive">
+        <text>a radioactive zone</text>
+    </string>
+    <string id="talker_zone_radioactive_weak">
+        <text>a weakly radioactive zone</text>
+    </string>
+    <string id="talker_zone_radioactive_average">
+        <text>an averagely radioactive zone</text>
+    </string>
+    <string id="talker_zone_radioactive_strong">
+        <text>a strongly radioactive zone</text>
+    </string>
+    <string id="talker_zone_field_acidic">
+        <text>an acidic field</text>
+    </string>
+    <string id="talker_zone_field_acidic_weak">
+        <text>a weakly acidic field</text>
+    </string>
+    <string id="talker_zone_field_acidic_average">
+        <text>an averagely acidic field</text>
+    </string>
+    <string id="talker_zone_field_acidic_strong">
+        <text>a strongly acidic field</text>
+    </string>
+    <string id="talker_zone_field_psychic">
+        <text>a psychic field</text>
+    </string>
+    <string id="talker_zone_field_psychic_weak">
+        <text>a weakly psychic field</text>
+    </string>
+    <string id="talker_zone_field_psychic_average">
+        <text>an averagely psychic field</text>
+    </string>
+    <string id="talker_zone_field_psychic_strong">
+        <text>a strongly psychic field</text>
+    </string>
+    <string id="talker_zone_field_thermal">
+        <text>a thermal field</text>
+    </string>
+    <string id="talker_zone_field_thermal_weak">
+        <text>a weakly thermal field</text>
+    </string>
+    <string id="talker_zone_field_thermal_average">
+        <text>an averagely thermal field</text>
+    </string>
+    <string id="talker_zone_field_thermal_strong">
+        <text>a strongly thermal field</text>
+    </string>
+    <string id="talker_zone_mine_radar">
+        <text>a psy-damaging 'radar' anomaly</text>
+    </string>
+    <string id="talker_zone_mine_vortex">
+        <text>a gravitational vortex anomaly</text>
+    </string>
+</string_table> 

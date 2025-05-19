@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+    <!-- GENERAL OPTIONS -->
+    <string id="ui_mcm_talker_title">
+        <text>T.A.L.K.E.R. Options</text>
+    </string>
+    <string id="ui_mcm_menu_talker">
+        <text>T.A.L.K.E.R.</text>
+    </string>
+    <string id="ui_mcm_talker_desc">
+        <text>Adjust how frequently different characters make comments.</text>
+    </string>
+    <string id="ui_mcm_talker_global_rate">
+        <text>Global Rate of Comments</text>
+    </string>
+    <string id="ui_mcm_talker_show_personalities">
+        <text>Show Personalities</text>
+    </string>
+    <string id="ui_mcm_talker_strong_personalities">
+        <text>Strong Personalities</text>
+    </string>
+    <string id="ui_mcm_talker_gpt_version">
+        <text>GPT Model Version</text>
+    </string>
+    <string id="ui_mcm_lst_GPT-3">
+        <text>GPT 3</text>
+    </string>
+    <string id="ui_mcm_1st_GPT-4">
+        <text>GPT 4</text>
+    </string>
+    <string id="ui_mcm_talker_npc_greet_player">
+        <text>NPCs greet player</text>
+    </string>
+    <string id="ui_mcm_talker_display_hud_messages_while_talking">
+        <text>Display HUD messages while talking</text>
+    </string>
+    <string id="ui_mcm_talker_player_speaks_center">
+        <text>Player speaks from screen center</text>
+    </string>
+    <string id="ui_mcm_talker_mute_logging">
+        <text>Mute logging</text>
+    </string>
+    
+    <!-- COMMENT RELEVANCE OPTIONS -->
+    <string id="ui_mcm_talker_player_relevance">
+        <text>Player Comment Relevance Multiplier</text>
+    </string>
+    <string id="ui_mcm_talker_player_can_speak">
+        <text>Player character can speak</text>
+    </string>
+    <string id="ui_mcm_talker_companion_relevance">
+        <text>Companion Comment Relevance Multiplier</text>
+    </string>
+    <string id="ui_mcm_talker_enemy_relevance">
+        <text>Enemy Comment Relevance Multiplier</text>
+    </string>
+    <string id="ui_mcm_talker_neutral_relevance">
+        <text>Neutral NPC Comment Relevance Multiplier</text>
+    </string>
+
+    <!-- SPEAK KEY CONFIGURATION -->
+    <string id="ui_mcm_talker_speak_key_title">
+        <text>Speak Key Configuration</text>
+    </string>
+    <string id="ui_mcm_talker_speak_key_description">
+        <text>Configure the key used to initiate speaking.</text>
+    </string>
+    <string id="ui_mcm_talker_speak_key">
+        <text>Microphone input key.</text>
+    </string>
+    
+    
+    <!-- CONVERSATION STUFF -->
+    <string id="ui_mcm_talker_conversation_desc">
+        <text>Conversation settings</text>
+    </string>
+    <string id="ui_mcm_talker_default_reply_chance">
+        <text>Reply chance on short comments</text>
+    </string>
+    <string id="ui_mcm_talker_idle_conversation_reply_chance">
+        <text>Reply chance on idle conversation</text>
+    </string>
+    <string id="ui_mcm_talker_default_max_conversation_length">
+        <text>Max replies in a conversation</text>
+    </string>
+    <string id="ui_mcm_talker_idle_conversation_cooldown_minutes">
+        <text>Idle Conversation Cooldown (minutes)</text>
+    </string>
+    <string id="ui_mcm_talker_default_max_words">
+        <text>Default maximum words in a comment</text>
+    </string>
+    <string id="ui_mcm_talker_default_max_conversation_word_count">
+        <text>Max words in a conversation reply</text>
+    </string>
+    <string id="ui_mcm_talker_reply_delay_minimum_ms_per_character">
+        <text>Minimum reply delay per character (ms)</text>
+    </string>
+</string_table>

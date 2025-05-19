@@ -1,0 +1,19 @@
+{ {
+    content = "Nearby characters are in order of distance: Anonsky, a brave experienced stalker wielding a shotgun (ID: 1), Sarik, a cautious very inexperienced Freedom wielding a pistol (ID: 2), Danila Matador, a reckless inexperienced stalker wielding a rifle (ID: 3), Fanatic, a zealous experienced stalker wielding a Ak-47 (ID: 4), Egorka Orderly, a nervous very inexperienced stalker wielding a colt 1991 (ID: 5), Hip, a calm experienced stalker wielding a knife (ID: 6)",
+    role = "system"
+  }, {
+    content = "Sarik lost the map",
+    role = "user"
+  }, {
+    content = "Sarik insulted Anonsky",
+    role = "user"
+  }, {
+    content = "Anonsky fought Sarik",
+    role = "user"
+  }, {
+    content = "Anonsky killed Sarik",
+    role = "user"
+  }, {
+    content = "Pick the most likely next speaker and reply with only their ID.",
+    role = "system"
+  } }

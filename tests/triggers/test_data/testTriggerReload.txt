@@ -1,0 +1,52 @@
+{ "%s is reloading %s", { <1>{
+      experience = "experienced",
+      faction = "stalker",
+      game_id = "1",
+      name = "Anonsky",
+      personality = "brave",
+      weapon = "shotgun"
+    }, {
+      game_id = "2",
+      name = "mock_weapon",
+      <metatable> = <2>{
+        __index = <table 2>,
+        describe = <function 1>,
+        describe_short = <function 2>,
+        new = <function 3>
+      }
+    } }, { <table 1>, {
+      experience = "very inexperienced",
+      faction = "Freedom",
+      game_id = "2",
+      name = "Sarik",
+      personality = "cautious",
+      weapon = "pistol"
+    }, {
+      experience = "inexperienced",
+      faction = "stalker",
+      game_id = "3",
+      name = "Danila Matador",
+      personality = "reckless",
+      weapon = "rifle"
+    }, {
+      experience = "experienced",
+      faction = "stalker",
+      game_id = "4",
+      name = "Fanatic",
+      personality = "zealous",
+      weapon = "Ak-47"
+    }, {
+      experience = "very inexperienced",
+      faction = "stalker",
+      game_id = "5",
+      name = "Egorka Orderly",
+      personality = "nervous",
+      weapon = "colt 1991"
+    }, {
+      experience = "experienced",
+      faction = "stalker",
+      game_id = "6",
+      name = "Hip",
+      personality = "calm",
+      weapon = "knife"
+    } } }

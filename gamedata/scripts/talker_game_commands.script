@@ -1,0 +1,56 @@
+local queries = talker_game_queries
+
+----------------------------------------------------------------------------------------------------------------------------
+-- Displaying a message to the chat window
+----------------------------------------------------------------------------------------------------------------------------
+local function play_pda_beep()
+    xr_sound.set_sound_play(AC_ID, "pda_beep_1")
+end
+
+-- Determine the icon for the news tip
+local function get_character_icon(sender)
+    local image = "ui_iconsTotal_grouping"
+    if sender ~= nil then
+        if type(sender) == "string" then
+            image = "ui_inGame2_Radiopomehi"
+        elseif queries.is_stalker(sender) then
+            image = sender:character_icon()
+        end
+    end
+    return image
+end
+
+-- Determine the sender's name
+local function determine_sender_name(sender)
+    local sender_name = queries.get_name(sender)
+    sender_name = sender_name .. (", " .. game.translate_string(queries.get_faction(sender)) .. (queries.is_companion(sender) and " companion" or ""))
+    return sender_name
+end
+
+function send_news_tip(sender_name, message, image, showtime)
+    db.actor:give_game_news(sender_name, message, image, 0, showtime)
+end
+
+-- Shows NPC as speaking aka send_message
+function display_message(sender_id, message)
+    local sender = queries.get_obj_by_id(sender_id)
+    if not queries.is_living_character(sender) then return end -- this also blocks mutants
+
+    local showtime = 5000 -- calculate_showtime(message)
+    local sender_name = determine_sender_name(sender)
+    local image = get_character_icon(sender)
+    send_news_tip(sender_name, message, image, showtime)
+    play_pda_beep()
+end
+
+----------------------------------------------------------------------------------------------------------------------------
+-- Others
+----------------------------------------------------------------------------------------------------------------------------
+
+function display_hud_message(input, seconds)
+    actor_menu.set_msg(1, input, seconds)
+end
+
+function is_loaded()
+    return true
+end

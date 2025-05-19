@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+    <string id="talker_traits_1">
+        <text>Morose</text>
+    </string>
+    <string id="talker_traits_2">
+        <text>Sarcastic</text>
+    </string>
+    <string id="talker_traits_3">
+        <text>Cautious</text>
+    </string>
+    <string id="talker_traits_4">
+        <text>Paranoid</text>
+    </string>
+    <string id="talker_traits_5">
+        <text>Resourceful</text>
+    </string>
+    <string id="talker_traits_5">
+        <text>sardonic</text>
+    </string>
+    <string id="talker_traits_6">
+        <text>Gritty</text>
+    </string>
+    <string id="talker_traits_7">
+        <text>Stoic</text>
+    </string>
+    <string id="talker_traits_8">
+        <text>Resilient</text>
+    </string>
+    <string id="talker_traits_9">
+        <text>Opportunistic</text>
+    </string>
+    <string id="talker_traits_10">
+        <text>Tenacious</text>
+    </string>
+    <string id="talker_traits_11">
+        <text>Mistrustful</text>
+    </string>
+    <string id="talker_traits_12">
+        <text>Pessimistic</text>
+    </string>
+    <string id="talker_traits_13">
+        <text>Self-reliant</text>
+    </string>
+    <string id="talker_traits_14">
+        <text>Survivalist</text>
+    </string>
+    <string id="talker_traits_15">
+        <text>Unpredictable</text>
+    </string>
+    <string id="talker_traits_16">
+        <text>Adaptable</text>
+    </string>
+    <string id="talker_traits_17">
+        <text>friendly</text>
+    </string>
+    <string id="talker_traits_18">
+        <text>hardened</text>
+    </string>
+    <string id="talker_traits_19">
+        <text>Reckless</text>
+    </string>
+    <string id="talker_traits_20">
+        <text>Street-smart</text>
+    </string>
+    <string id="talker_traits_21">
+        <text>Nihilistic</text>
+    </string>
+    <string id="talker_traits_22">
+        <text>Pragmatic</text>
+    </string>
+    <string id="talker_traits_23">
+        <text>Greedy</text>
+    </string>
+    <string id="talker_traits_24">
+        <text>Loyal</text>
+    </string>
+    <string id="talker_traits_25">
+        <text>Superstitious</text>
+    </string>
+    <string id="talker_traits_26">
+        <text>Gruff</text>
+    </string>
+    <string id="talker_traits_27">
+        <text>Jaded</text>
+    </string>
+    <string id="talker_traits_28">
+        <text>Curious</text>
+    </string>
+    <string id="talker_traits_29">
+        <text>Fearful</text>
+    </string>
+    <string id="talker_traits_30">
+        <text>Anxious</text>
+    </string>
+    <string id="talker_traits_31">
+        <text>Fatalistic</text>
+    </string>
+    <string id="talker_traits_32">
+        <text>Greed-driven</text>
+    </string>
+    <string id="talker_traits_33">
+        <text>Altruistic</text>
+    </string>
+    <string id="talker_traits_34">
+        <text>Philosophical</text>
+    </string>
+    <string id="talker_traits_35">
+        <text>Mysterious</text>
+    </string>
+    <string id="talker_traits_36">
+        <text>Thrill-seeker</text>
+    </string>
+    <string id="talker_traits_37">
+        <text>Hesitant</text>
+    </string>
+    <string id="talker_traits_38">
+        <text>Brutal</text>
+    </string>
+    <string id="talker_traits_39">
+        <text>Calculating</text>
+    </string>
+    <string id="talker_traits_40">
+        <text>Ruthless</text>
+    </string>
+    <string id="talker_traits_41">
+        <text>Distrustful</text>
+    </string>
+    <string id="talker_traits_42">
+        <text>Streetwise</text>
+    </string>
+    <string id="talker_traits_43">
+        <text>Observant</text>
+    </string>
+    <string id="talker_traits_44">
+        <text>Scheming</text>
+    </string>
+    <string id="talker_traits_45">
+        <text>Hopeful</text>
+    </string>
+    <string id="talker_traits_46">
+        <text>Desperate</text>
+    </string>
+    <string id="talker_traits_47">
+        <text>Determined</text>
+    </string>
+    <string id="talker_traits_48">
+        <text>Apathetic</text>
+    </string>
+    <string id="talker_traits_49">
+        <text>cowardly</text>
+    </string>
+    <string id="talker_traits_50">
+        <text>nervous</text>
+    </string>
+    <string id="talker_traits_51">
+        <text>brave</text>
+    </string>
+    <string id="talker_traits_52">
+        <text>dramatic</text>
+    </string>
+    <string id="talker_traits_53">
+        <text>soft spoken</text>
+    </string>
+    <string id="talker_traits_54">
+        <text>easily angered</text>
+    </string>
+    <string id="talker_traits_55">
+        <text>concise</text>
+    </string>
+    <string id="talker_traits_56">
+        <text>polite</text>
+    </string>
+    <string id="talker_traits_57">
+        <text>rude</text>
+    </string>
+    <string id="talker_traits_58">
+        <text>selfish</text>
+    </string>
+    <string id="talker_traits_59">
+        <text>gregarious</text>
+    </string>
+    <string id="talker_traits_60">
+        <text>joker</text>
+    </string>
+    <string id="talker_traits_61">
+        <text>relaxed</text>
+    </string>
+    <string id="talker_traits_62">
+        <text>calm</text>
+    </string>
+    <string id="talker_traits_63">
+        <text>cool</text>
+    </string>
+</string_table>

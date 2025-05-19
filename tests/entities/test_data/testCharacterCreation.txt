@@ -1,0 +1,7 @@
+{
+  experience = "Veteran",
+  faction = "Warrior",
+  game_id = "1",
+  name = "John Doe",
+  personality = "Cautious"
+}

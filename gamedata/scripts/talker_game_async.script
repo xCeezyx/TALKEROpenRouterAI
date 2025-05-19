@@ -1,0 +1,22 @@
+---@diagnostic disable: undefined-global
+
+local log = require("framework.logger")
+
+function repeat_until_true(seconds, func, ...)
+    local safe_function = function()
+        local status, result = pcall(func)
+        if not status then
+            log.error("Error:" .. result)
+            return true
+        end
+        return result
+    end
+    local eventId = "repeat_until_true_" .. tostring(func) .. tostring(math.random(1000000))
+    local actionId = "action_" .. tostring(math.random(1000000))
+    CreateTimeEvent(eventId, actionId, seconds, safe_function, ...)
+end
+
+
+function is_loaded()
+    return true
+end

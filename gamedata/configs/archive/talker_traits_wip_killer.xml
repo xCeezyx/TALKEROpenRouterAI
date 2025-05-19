@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+    <!-- Existing traits -->
+    <string id="talker_traits_killer_1">
+        <text>oppertunistic</text>
+    </string>
+    <string id="talker_traits_killer_2">
+        <text>organized</text>
+    </string>
+    <string id="talker_traits_killer_3">
+        <text>greedy</text>
+    </string>
+    <string id="talker_traits_killer_4">
+        <text>cutthroat</text>
+    </string>
+    <string id="talker_traits_killer_5">
+        <text>ruthless</text>
+    </string>
+    <string id="talker_traits_killer_6">
+        <text>merciless</text>
+    </string>
+    <string id="talker_traits_killer_7">
+        <text>strategic</text>
+    </string>
+    <string id="talker_traits_killer_8">
+        <text>tactical</text>
+    </string>
+    <string id="talker_traits_killer_9">
+        <text>calculating</text>
+    </string>
+    <string id="talker_traits_killer_10">
+        <text>unscrupulous</text>
+    </string>
+    <string id="talker_traits_killer_11">
+        <text>professional</text>
+    </string>
+    <string id="talker_traits_killer_12">
+        <text>ambitious</text>
+    </string>
+    <string id="talker_traits_killer_13">
+        <text>intimidating</text>
+    </string>
+    <string id="talker_traits_killer_14">
+        <text>authoritative</text>
+    </string>
+    <string id="talker_traits_killer_15">
+        <text>resolute</text>
+    </string>
+    <string id="talker_traits_killer_16">
+        <text>covert</text>
+    </string>
+    <string id="talker_traits_killer_17">
+        <text>opportunistic</text>
+    </string>
+    <string id="talker_traits_killer_18">
+        <text>guarded</text>
+    </string>
+    <string id="talker_traits_killer_19">
+        <text>detached</text>
+    </string>
+    <string id="talker_traits_killer_20">
+        <text>cunning</text>
+    </string>
+    <string id="talker_traits_killer_21">
+        <text>disciplined</text>
+    </string>
+    <string id="talker_traits_killer_22">
+        <text>aggressive</text>
+    </string>
+    <string id="talker_traits_killer_23">
+        <text>dominant</text>
+    </string>
+    <string id="talker_traits_killer_24">
+        <text>unsentimental</text>
+    </string>
+    <string id="talker_traits_killer_25">
+        <text>pragmatic</text>
+    </string>
+    <string id="talker_traits_killer_26">
+        <text>unyielding</text>
+    </string>
+    <string id="talker_traits_killer_27">
+        <text>resourceful</text>
+    </string>
+    <string id="talker_traits_killer_28">
+        <text>self-reliant</text>
+    </string>
+    <string id="talker_traits_killer_29">
+        <text>adaptable</text>
+    </string>
+    <string id="talker_traits_killer_30">
+        <text>independent</text>
+    </string>
+    <string id="talker_traits_killer_31">
+        <text>focused</text>
+    </string>
+    <string id="talker_traits_killer_32">
+        <text>hardened</text>
+    </string>
+    <string id="talker_traits_killer_33">
+        <text>stealthy</text>
+    </string>
+    <string id="talker_traits_killer_34">
+        <text>expedient</text>
+    </string>
+    <!-- Specific nationalities -->
+    <string id="talker_traits_killer_35">
+        <text>American</text>
+    </string>
+    <string id="talker_traits_killer_36">
+        <text>Canadian</text>
+    </string>
+    <string id="talker_traits_killer_37">
+        <text>British</text>
+    </string>
+    <string id="talker_traits_killer_38">
+        <text>German</text>
+    </string>
+    <string id="talker_traits_killer_39">
+        <text>French</text>
+    </string>
+    <string id="talker_traits_killer_40">
+        <text>Italian</text>
+    </string>
+    <string id="talker_traits_killer_41">
+        <text>Australian</text>
+    </string>
+    <string id="talker_traits_killer_42">
+        <text>Dutch</text>
+    </string>
+    <string id="talker_traits_killer_43">
+        <text>Spanish</text>
+    </string>
+    <string id="talker_traits_killer_44">
+        <text>Swedish</text>
+    </string>
+    <string id="talker_traits_killer_45">
+        <text>Belgian</text>
+    </string>
+    <string id="talker_traits_killer_46">
+        <text>Norwegian</text>
+    </string>
+    <string id="talker_traits_killer_47">
+        <text>Swiss</text>
+    </string>
+    <string id="talker_traits_killer_48">
+        <text>Austrian</text>
+    </string>
+    <string id="talker_traits_killer_49">
+        <text>Irish</text>
+    </string>
+    <string id="talker_traits_killer_50">
+        <text>New Zealander</text>
+    </string>
+    <string id="talker_traits_killer_51">
+        <text>Greek</text>
+    </string>
+    <string id="talker_traits_killer_52">
+        <text>Portuguese</text>
+    </string>
+    <string id="talker_traits_killer_53">
+        <text>Polish</text>
+    </string>
+    <string id="talker_traits_killer_54">
+        <text>Finnish</text>
+    </string>
+    <string id="talker_traits_killer_55">
+        <text>Danish</text>
+    </string>
+    <string id="talker_traits_killer_56">
+        <text>ex-marine</text>
+    </string>
+    <string id="talker_traits_killer_57">
+        <text>ex-navy seal</text>
+    </string>
+    <string id="talker_traits_killer_58">
+        <text>ex-CIA</text>
+    </string>
+    <string id="talker_traits_killer_59">
+        <text>ex-MI6</text>
+    </string>
+    <string id="talker_traits_killer_60">
+        <text>ex-british SAS</text>
+    </string>
+</string_table>

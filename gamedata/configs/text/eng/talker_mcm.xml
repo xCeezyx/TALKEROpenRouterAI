@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+    <!-- GENERAL OPTIONS -->
+    <string id="ui_mcm_talker_title">
+        <text>T.A.L.K.E.R. Options</text>
+    </string>
+    <string id="ui_mcm_menu_talker">
+        <text>T.A.L.K.E.R.</text>
+    </string>
+    <string id="ui_mcm_talker_gpt_version">
+        <text>GPT Model for dialogue</text>
+    </string>
+    <string id="ui_mcm_lst_gpt-4o">
+        <text>GPT-4o</text>
+    </string>
+    <string id="ui_mcm_lst_gpt-4o-mini">
+        <text>GPT-4o mini</text>
+    </string>
+    <string id="ui_mcm_lst_gpt-4-turbo">
+        <text>GPT 4 turbo</text>
+    </string>
+    <!-- SPEAK KEY CONFIGURATION -->
+    <string id="ui_mcm_talker_speak_key_title">
+        <text>Speak Key Configuration</text>
+    </string>
+    <string id="ui_mcm_talker_speak_key_description">
+        <text>Configure the key used to initiate speaking.</text>
+    </string>
+    <string id="ui_mcm_talker_speak_key">
+        <text>Microphone input key.</text>
+    </string>
+</string_table>

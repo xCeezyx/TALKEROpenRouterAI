@@ -1,0 +1,79 @@
+--------------------------------------------------------------------------------------------
+-- PLAYER INTERACTS WITH ANOMALY
+-- Not damaged by it, but affected by it
+-- Typically this is a gravitational anomaly or radiation
+-- This script was a port from STALKER 1 and may need cleanup
+--------------------------------------------------------------------------------------------
+package.path = package.path .. ";./bin/lua/?.lua;"
+local log = require('framework.logger')
+local game = require("infra.game_adapter")
+local interface = require("interface.interface")
+-- Import game interface modules
+local queries = talker_game_queries
+----------------------------------------------------------------------------------------------------
+-- Constants
+----------------------------------------------------------------------------------------------------
+local ANOMALY_COMMENT_CD = 10 * 1000 -- 10 seconds
+local INTERACTION_DISTANCE = 1
+
+----------------------------------------------------------------------------------------------------
+-- Conditions
+----------------------------------------------------------------------------------------------------
+local LAST_ANOMALY_COMMENT = 0
+
+function is_valid_event(anomaly)
+    result =
+        game.is_cooldown_over(LAST_ANOMALY_COMMENT, ANOMALY_COMMENT_CD) and
+        queries.distance_between(db.actor, anomaly) > INTERACTION_DISTANCE
+    -- reset cooldown
+    if result then LAST_ANOMALY_COMMENT = queries.get_game_time_ms() end
+    return result
+end
+
+----------------------------------------------------------------------------------------------------
+-- Function
+----------------------------------------------------------------------------------------------------
+
+function create_anomaly_interaction_event(anomaly_name)
+    local unformatted_description = "%s got very close to a %s"
+    local player = game.get_player_character()
+    interface.register_game_event_near_player(unformatted_description, {player, anomaly_name})
+end
+
+--------------------------------------------------------------------------------------------
+-- Main function
+--------------------------------------------------------------------------------------------
+
+-- Anomaly interaction
+function actor_on_feeling_anomaly(anomaly)
+    local anomaly_name = queries.load_xml(anomaly:section())
+    log.debug("handle_actor_on_feeling_anomaly called with: ", anomaly_name)
+    -- Skip if the anomaly is not close enough
+    if is_valid_event(anomaly) then
+        create_anomaly_interaction_event(anomaly_name)
+    end
+end
+
+----------------------------------------------------------------------------------------------------
+-- Set up
+----------------------------------------------------------------------------------------------------
+
+function safe_actor_on_feeling_anomaly(anomaly)
+    local status, err = pcall(actor_on_feeling_anomaly, anomaly)
+    if not status then
+        log.error("Error in on_player_interaction: %s", err)
+    end
+end
+
+function on_game_start()
+    RegisterScriptCallback("actor_on_feeling_anomaly", safe_actor_on_feeling_anomaly)
+end
+
+-- Module loaded check
+function is_loaded()
+    return true
+end
+
+function insert_interface(new_interface)
+    interface = new_interface
+end

@@ -1,0 +1,39 @@
+local game = require("infra.game_adapter")
+
+-- Function called when the game starts
+local modules = {
+    talker_game_async = "Talker Game Async",
+    talker_game_commands = "Talker Game Commands",
+    talker_game_queries = "Talker Game Queries",
+    talker_trigger_mic = "Talker Trigger Mic",
+    talker_trigger_reload = "Talker Trigger Reload",
+    talker_game_files = "Talker Game Files",
+}
+
+-- intentionally duplicated
+function display_hud_message(input)
+    actor_menu.set_msg(1, input, 3)
+end
+
+function check_loaded_modules()
+    local all_loaded = true
+    for key, name in pairs(modules) do
+        local status, result = pcall(function()
+            return _G[key] and _G[key].is_loaded()
+        end)
+        if not status or not result then
+            all_loaded = false
+            display_hud_message(name .. " not loaded")
+        end
+    end
+    if game.is_mock() then
+        display_hud_message('Looks like a testing module is loaded, not normal in game. Tell Dan.')
+    end
+    if all_loaded then
+        display_hud_message("All modules loaded")
+    end
+end
+
+function on_game_start()
+    RegisterScriptCallback("on_loading_screen_dismissed", check_loaded_modules)
+end

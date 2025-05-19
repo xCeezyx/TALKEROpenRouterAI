@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+    <!-- Independent -->
+    <string id="talker_ranks_stalker_novice">
+        <text>very inexperienced</text>
+    </string>
+    <string id="talker_ranks_stalker_trainee">
+        <text>inexperienced</text>
+    </string>
+    <string id="talker_ranks_stalker_experienced">
+        <text>competent</text>
+    </string>
+    <string id="talker_ranks_stalker_professional">
+        <text>experienced</text>
+    </string>
+    <string id="talker_ranks_stalker_veteran">
+        <text>veteran</text>
+    </string>
+    <string id="talker_ranks_stalker_expert">
+        <text>expert</text>
+    </string>
+    <string id="talker_ranks_stalker_master">
+        <text>master</text>
+    </string>
+    <string id="talker_ranks_stalker_legend">
+        <text>legendary</text>
+    </string>
+    <!-- ARMY -->
+    <string id="talker_ranks_army_novice">
+        <text>Private</text>
+    </string>
+    <string id="talker_ranks_army_trainee">
+        <text>Corporal</text>
+    </string>
+    <string id="talker_ranks_army_experienced">
+        <text>Junior Sergeant</text>
+    </string>
+    <string id="talker_ranks_army_professional">
+        <text>Sergeant</text>
+    </string>
+    <string id="talker_ranks_army_veteran">
+        <text>Senior Sergeant</text>
+    </string>
+    <string id="talker_ranks_army_expert">
+        <text>Lieutenant</text>
+    </string>
+    <string id="talker_ranks_army_master">
+        <text>Captain</text>
+    </string>
+    <string id="talker_ranks_army_legend">
+        <text>Major</text>
+    </string>
+
+    <!-- DUTY -->
+    <string id="talker_ranks_dolg_novice">
+        <text>Private</text>
+    </string>
+    <string id="talker_ranks_dolg_trainee">
+        <text>Corporal</text>
+    </string>
+    <string id="talker_ranks_dolg_experienced">
+        <text>Junior Sergeant</text>
+    </string>
+    <string id="talker_ranks_dolg_professional">
+        <text>Sergeant</text>
+    </string>
+    <string id="talker_ranks_dolg_veteran">
+        <text>Senior Sergeant</text>
+    </string>
+    <string id="talker_ranks_dolg_expert">
+        <text>Lieutenant</text>
+    </string>
+    <string id="talker_ranks_dolg_master">
+        <text>Captain</text>
+    </string>
+    <string id="talker_ranks_dolg_legend">
+        <text>Major</text>
+    </string>
+
+    <!-- MERC -->
+    <string id="talker_ranks_killer_novice">
+        <text>Recruit</text>
+    </string>
+    <string id="talker_ranks_killer_trainee">
+        <text>Junior Operative</text>
+    </string>
+    <string id="talker_ranks_killer_experienced">
+        <text>Operative</text>
+    </string>
+    <string id="talker_ranks_killer_professional">
+        <text>Senior Operative</text>
+    </string>
+    <string id="talker_ranks_killer_veteran">
+        <text>Elite Operative</text>
+    </string>
+    <string id="talker_ranks_killer_expert">
+        <text>Expert Operative</text>
+    </string>
+    <string id="talker_ranks_killer_master">
+        <text>Commander</text>
+    </string>
+    <string id="talker_ranks_killer_legend">
+        <text>Master Commander</text>
+    </string>
+
+    <!-- Eco -->
+    <string id="talker_ranks_ecolog_novice">
+        <text>Intern</text>
+    </string>
+    <string id="talker_ranks_ecolog_trainee">
+        <text>Research Assistant</text>
+    </string>
+    <string id="talker_ranks_ecolog_experienced">
+        <text>Junior Field Researcher</text>
+    </string>
+    <string id="talker_ranks_ecolog_professional">
+        <text>Field Researcher</text>
+    </string>
+    <string id="talker_ranks_ecolog_veteran">
+        <text>Senior Field researcher</text>
+    </string>
+    <string id="talker_ranks_ecolog_expert">
+        <text>Associate professor</text>
+    </string>
+    <string id="talker_ranks_ecolog_master">
+        <text>Full professor</text>
+    </string>
+    <string id="talker_ranks_ecolog_legend">
+        <text>Eminent Scholar</text>
+    </string>
+
+    <!-- Eco -->
+    <string id="talker_ranks_ecolog_novice">
+        <text>Intern</text>
+    </string>
+    <string id="talker_ranks_ecolog_trainee">
+        <text>Research Assistant</text>
+    </string>
+    <string id="talker_ranks_ecolog_experienced">
+        <text>Junior Field Researcher</text>
+    </string>
+    <string id="talker_ranks_ecolog_professional">
+        <text>Field Researcher</text>
+    </string>
+    <string id="talker_ranks_ecolog_veteran">
+        <text>Senior Field researcher</text>
+    </string>
+    <string id="talker_ranks_ecolog_expert">
+        <text>Associate professor</text>
+    </string>
+    <string id="talker_ranks_ecolog_master">
+        <text>Full professor</text>
+    </string>
+    <string id="talker_ranks_ecolog_legend">
+        <text>Eminent Scholar</text>
+    </string>
+    <!-- Eco -->
+    <string id="talker_ranks_ecolog_novice">
+        <text>Intern</text>
+    </string>
+    <string id="talker_ranks_ecolog_trainee">
+        <text>Research Assistant</text>
+    </string>
+    <string id="talker_ranks_ecolog_experienced">
+        <text>Junior Field Researcher</text>
+    </string>
+    <string id="talker_ranks_ecolog_professional">
+        <text>Field Researcher</text>
+    </string>
+    <string id="talker_ranks_ecolog_veteran">
+        <text>Senior Field researcher</text>
+    </string>
+    <string id="talker_ranks_ecolog_expert">
+        <text>Associate professor</text>
+    </string>
+    <string id="talker_ranks_ecolog_master">
+        <text>Full professor</text>
+    </string>
+    <string id="talker_ranks_ecolog_legend">
+        <text>Eminent Scholar</text>
+    </string>
+    <!-- isg -->
+    <string id="talker_ranks_isg_novice">
+        <text>Intern</text>
+    </string>
+    <string id="talker_ranks_isg_trainee">
+        <text>Research Assistant</text>
+    </string>
+    <string id="talker_ranks_isg_experienced">
+        <text>Junior Field Researcher</text>
+    </string>
+    <string id="talker_ranks_isg_professional">
+        <text>Field Researcher</text>
+    </string>
+    <string id="talker_ranks_isg_veteran">
+        <text>Senior Field researcher</text>
+    </string>
+    <string id="talker_ranks_isg_expert">
+        <text>Associate professor</text>
+    </string>
+    <string id="talker_ranks_isg_master">
+        <text>Full professor</text>
+    </string>
+    <string id="talker_ranks_isg_legend">
+        <text>Eminent Scholar</text>
+    </string>
+</string_table>

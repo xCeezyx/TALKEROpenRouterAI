@@ -1,0 +1,16 @@
+{ {
+    content = "Consolidate the following memories into a shorter memory",
+    role = "system"
+  }, {
+    content = "Sarik lost the map",
+    role = "user"
+  }, {
+    content = "Sarik insulted Anonsky",
+    role = "user"
+  }, {
+    content = "Anonsky fought Sarik",
+    role = "user"
+  }, {
+    content = "Anonsky killed Sarik",
+    role = "user"
+  } }

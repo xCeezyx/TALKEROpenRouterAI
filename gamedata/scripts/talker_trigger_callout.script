@@ -1,0 +1,75 @@
+---@diagnostic disable: undefined-global
+package.path = package.path .. ";./bin/lua/?.lua;"
+local interface = require("interface.interface")
+local game = require("infra.game_adapter")
+local log = require('framework.logger')
+
+-- Import game interface modules
+local queries = talker_game_queries
+----------------------------------------------------------------------------------------------------
+-- INFO
+----------------------------------------------------------------------------------------------------
+-- the callout trigger script is responsible for generating callouts from NPCs to other NPCs
+-- on_enemy_eval occurs at high frequency, so we limit the amount of calls
+
+-- RULES
+-- on enemy eval
+--      if the spotter is not in combat
+--          call out the target
+
+---------------------------------------------------------------------------------------------
+-- CONDITIONS
+--------------------------------------------------------------------------------------------
+
+local last_callout_time_ms = 0
+local callout_cooldown_ms = 30 * 1000 -- 30 seconds
+function is_valid_callout(npc_obj, target_obj)
+    result =
+        (queries.get_game_time_ms() - last_callout_time_ms) > callout_cooldown_ms   and
+        queries.is_living_character(npc_obj)                                        and
+        queries.are_enemies(npc_obj, target_obj)                                    and
+        not queries.is_in_combat(npc_obj)
+    -- reset cooldown
+    if result then last_callout_time_ms = queries.get_game_time_ms() end
+    return result
+end
+
+---------------------------------------------------------------------------------------------
+-- ENEMY CALLOUTS
+--------------------------------------------------------------------------------------------
+function on_enemy_eval(npc_obj, target_obj)
+    -- determine if it's a callout
+    if not is_valid_callout(npc_obj, target_obj) then return end
+
+    --- create callout event
+    local unformatted_description = "%s spotted a %s"
+    local spotter = game.create_character(npc_obj)
+    local enemy = game.create_character(target_obj)
+    local witnesses = {spotter} -- information is conveyed through their dialogue event itself
+
+    -- register event
+    log.info(spotter.name .. " spotted " .. enemy.name)
+    interface.register_game_event(unformatted_description, {spotter, enemy}, witnesses, true)
+end
+
+--------------------------------------------------------------------------------------------
+-- Set up
+--------------------------------------------------------------------------------------------
+
+local function safe_on_enemy_eval(observer_obj, target_obj)
+    local status, err = pcall(function()
+        on_enemy_eval(observer_obj, target_obj)
+    end)
+    if not status then
+        log.error("Error in on_enemy_eval: " .. err)
+    end
+end
+
+function on_game_start()
+    RegisterScriptCallback("on_enemy_eval", safe_on_enemy_eval)
+end
+
+-- for validating all scripts have loaded
+function is_loaded()
+    return true
+end

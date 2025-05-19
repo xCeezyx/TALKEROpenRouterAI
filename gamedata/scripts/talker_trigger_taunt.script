@@ -1,0 +1,65 @@
+---@diagnostic disable: undefined-global
+package.path = package.path .. ";./bin/lua/?.lua;"
+
+local interface = require("interface.interface")
+local game = require("infra.game_adapter")
+local log = require('framework.logger')
+
+-- Import game interface modules
+local queries = talker_game_queries
+----------------------------------------------------------------------------------------------------
+-- INFO
+----------------------------------------------------------------------------------------------------
+-- NPCS taunting other NPCs
+-- on_enemy_eval occurs at high frequency, so we limit the amount of calls
+
+---------------------------------------------------------------------------------------------
+-- CONDITIONS
+--------------------------------------------------------------------------------------------
+last_taunt_time_ms = 0
+taunt_cooldown_ms = 5 * 60 * 1000
+function someone_should_taunt(npc_obj)
+    result =
+        (queries.get_game_time_ms() - last_taunt_time_ms) > taunt_cooldown_ms and
+        queries.is_living_character(npc_obj) and
+        queries.is_in_combat(npc_obj)
+    -- reset cooldown
+    if result then last_taunt_time_ms = queries.get_game_time_ms() end
+    return result
+end
+
+---------------------------------------------------------------------------------------------
+-- ENEMY CALLOUTS
+--------------------------------------------------------------------------------------------
+function on_enemy_eval(npc_obj, enemy_obj) -- could check for human enemy if we wanted
+    -- determine if it's a taunt
+    if not someone_should_taunt(npc_obj) then return end
+
+    --- create callout event
+    local unformatted_description = "%s decides to taunt a nearby enemy"
+    local speaker = game.create_character(npc_obj)
+    local witnesses = {speaker}
+
+    interface.register_game_event(unformatted_description, {speaker}, witnesses, true)
+end
+
+--------------------------------------------------------------------------------------------
+-- Set up
+--------------------------------------------------------------------------------------------
+
+local function safe_on_enemy_eval(observer_obj, enemy_obj)
+    local status, err = pcall(function()
+        on_enemy_eval(observer_obj, enemy_obj)
+    end)
+    if not status then
+        log.error("Error in on_enemy_eval: " .. err)
+    end
+end
+
+function on_game_start()
+    RegisterScriptCallback("on_enemy_eval", safe_on_enemy_eval)
+end
+
+function is_loaded()
+    return true
+end
