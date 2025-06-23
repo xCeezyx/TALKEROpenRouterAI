@@ -7,7 +7,26 @@ local logger = require("framework.logger")
 local Event  = require("domain.model.event")
 local Character = require("domain.model.character")
 local config = require("interface.config")
+local game_adapter = require('infra.game_adapter')
 require("infra.STALKER.factions")
+
+local ToolsStrings = [[
+List of tool actions, If you wanna interact with other people in the world then YOU MUST USE THESE.
+When you want to invoke one, say them in text with this pattern:
+
+    ExecuteAICommand(COMMAND_NAME, JSON_ARGUMENTS)
+
+COMMAND LIST:
+  • AttackIDs: {"ENTITYIDS":[integer_array]}
+    – Description: MUST USE if you want to attack the entity with the given ID, only use if you want to kill the ENTITYID ALWAY USE to defend yourself or when threatened don't randomly use this.
+    – Example:
+          ExecuteAICommand(AttackIDs, {"ENTITYIDS":[42,7,1337]})
+
+• GiveItem: {"ENTITYID": <integer>, "ITEMNAME": <text>, "AMOUNT": <integer>}
+    – MUST USE if you want to give items to ENTITY ID.
+
+End of command list.
+]]
 
 local function describe_characters_with_ids(characters)
     local descriptions = {}
@@ -159,16 +178,66 @@ function prompt_builder.create_dialogue_request_prompt(speaker, memories)
         weapon_info = " who is carrying a " .. speaker.weapon
     end
 
+    local inventory_info_start = " with a inventory containing "
+    local inventory_info = inventory_info_start
+    
+    local InventoryItemAmount = {}
+    local InventoryItems = {}
+
+    local NearbyCharacterDescriptions = ""
+
+    local speakerobject = level.object_by_id(tonumber(speaker.game_id))
+
+    if speakerobject then
+        speakerobject:iterate_inventory( function(temp, obj)
+            local Item_Info = ui_item.get_sec_name(obj:section())
+            if Item_Info then
+                if InventoryItemAmount[Item_Info] == nil then
+                    table.insert(InventoryItems, Item_Info)
+                    InventoryItemAmount[Item_Info] = 1
+                else
+                   InventoryItemAmount[Item_Info] = InventoryItemAmount[Item_Info]+ 1
+                end
+                
+            end
+        end)
+
+        NearbyCharacterDescriptions = "They also see :{"
+
+        local characters = game_adapter.get_characters_near(speakerobject, 25)
+        for _, character in ipairs(characters) do
+            local desc = string.format(" (ID: %d) %s", Character.describe(character), character.game_id)
+            NearbyCharacterDescriptions = NearbyCharacterDescriptions..desc..", "
+        end
+        NearbyCharacterDescriptions = NearbyCharacterDescriptions.."}"
+
+    end
+    for i,v in pairs(InventoryItems) do 
+        local ItemAmount = InventoryItemAmount[v]
+        local AmountText = tostring(ItemAmount)
+        inventory_info = inventory_info..v..","
+    end
+
+    if inventory_info == inventory_info_start then
+        inventory_info = inventory_info.."nothing"
+    else
+        inventory_info = inventory_info..". "
+    end
+
     logger.info("Creating prompt for speaker: %s", speaker)
 
+    table.insert(messages, system_message(ToolsStrings) )
     table.insert(messages, system_message("Write the next dialogue spoken by "
         .. speaker.name
         .. (weapon_info or "")
+        .. (inventory_info or "")
         .. " in a "
         .. (speaker.personality or "")
         .. ", "
         .. (get_faction_speaking_style(speaker.faction) or "")
-        .. " manner."))
+        .. " manner."
+        ..NearbyCharacterDescriptions
+        .. "Make use of tool actions if they fit the context, YOU MUST STILL MAKE DIALOUGE. "))
     table.insert(messages, system_message("Reply only in " .. config.language()))
     return messages
 end

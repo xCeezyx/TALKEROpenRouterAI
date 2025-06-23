@@ -16,6 +16,7 @@ local prompt_builder = require("infra.AI.prompt_builder")
 local logger = require("framework.logger")
 local memory_store = require("domain.repo.memory_store")
 local config = require("interface.config")
+local json   = require("infra.HTTP.json")
 local dialogue_cleaner = require("infra.AI.dialogue_cleaner")
 
 
@@ -198,6 +199,17 @@ function AI_request.compress_memories(speaker_id, request_dialogue)
 end
 
 
+local toolfunctions = {
+  ["AttackIDs"] = function(speakerid, args) 
+    local EntityObjectA = level.object_by_id(tonumber(speakerid))
+    for i,EntityID in pairs(args.ENTITYIDS) do
+      local EntityObjectB = level.object_by_id(tonumber(EntityID))
+      EntityObjectA:force_set_goodwill(-5000, EntityObjectB)
+      EntityObjectB:force_set_goodwill(-5000, EntityObjectA)
+    end
+  end,
+}
+
 function AI_request.request_dialogue(speaker_id, callback)
     
     logger.info("AI_request.request_dialogue")
@@ -217,6 +229,21 @@ function AI_request.request_dialogue(speaker_id, callback)
         end
         logger.info("Received dialogue: " .. generated_dialogue)
         generated_dialogue = dialogue_cleaner.improve_response_text(generated_dialogue) -- remove censorship and other unwanted content
+
+        for cmdName, argsJson in generated_dialogue:gmatch("ExecuteAICommand%((%w+),%s*(%b{})%)") do
+          local ok, argsTable = pcall(json.decode, argsJson)
+          if ok then
+            if toolfunctions[cmdName] then
+              toolfunctions[cmdName](speaker_id, argsTable)
+            else
+              logger.info("Failed to get function for "..cmdName)
+            end
+          else
+            -- handle JSON decode error if you need
+            logger.info("Failed to decode args for "..cmdName)
+          end
+        end
+
         callback(generated_dialogue)
     end)
 end
@@ -241,6 +268,8 @@ end
 function AI_request.set_witnesses(recent_events)
     AI_request.witnesses = recent_events[#recent_events].witnesses
 end
+
+
 
 -- Sequencing function
 function AI_request.generate_dialogue(recent_events, function_send_dialogue_to_game)
