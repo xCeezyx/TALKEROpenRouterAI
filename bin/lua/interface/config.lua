@@ -67,6 +67,9 @@ local DEFAULT_LANGUAGE = language.any.long
 
 -- dynamic getters
 
+function c.aiusefunctions()
+    return true
+end
 
 function c.modelmethod()
     return tonumber(cfg("ai_model_method", 0))
@@ -95,9 +98,9 @@ end
 
 function c.dialogue_prompt()
     return ("You are a dialogue generator for the harsh setting of STALKER. Swear if appropriate. " ..
-            "Limit your reply to one sentence of dialogue. " ..
-            "Write ONLY dialogue and make it without quotations or leading with the character name. Avoid cliche and corny dialogue " ..
-            "Write dialogue that is realistic and appropriate for the tone of the STALKER setting and surroundings. " ..
+            "Limit your reply to one sentence. " ..
+            "Only say tool actions and write dialogue and make it without quotations or leading with the character name. Avoid cliche and corny dialogue " ..
+            "Write dialogue and use tool actions that is realistic and appropriate for the tone of the STALKER setting and surroundings. " ..
             "Don't be overly antagonistic if not provoked. " ..
             "Speak %s"
         ):format(c.language())
