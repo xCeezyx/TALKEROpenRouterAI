@@ -206,7 +206,7 @@ function prompt_builder.create_dialogue_request_prompt(speaker, memories)
 
         local characters = game_adapter.get_characters_near(speakerobject, 25)
         for _, character in ipairs(characters) do
-            local desc = string.format(" (ID: %d) %s", Character.describe(character), character.game_id)
+            local desc = string.format("%s (ID: %d) ", Character.describe(character), character.game_id)
             NearbyCharacterDescriptions = NearbyCharacterDescriptions..desc..", "
         end
         NearbyCharacterDescriptions = NearbyCharacterDescriptions.."}"

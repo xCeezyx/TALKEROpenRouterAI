@@ -1,7 +1,6 @@
 package.path = package.path .. ";./bin/lua/?.lua;"
 local personalities = require("domain.repo.personalities")
 local log = require('framework.logger')
-
 -- Character class definition
 Character = {}
 
@@ -30,7 +29,7 @@ function Character.describe(character)
 end
 
 function Character.describe_short(character)
-    return character.name
+    return character.name.." ID:"..tostring(character.game_id)
 end
 
 return Character

@@ -1,5 +1,6 @@
 package.path = package.path .. ";./bin/lua/?.lua;"
 local Item = require('domain.model.item')
+local Character = require('domain.model.character')
 -- Event data structure
 local Event = {}
 Event.TYPE = {
@@ -41,7 +42,7 @@ function Event.describe_event(event)
         if type(object) == "string" then
             table.insert(involved_object_descriptions, object)
         else
-            table.insert(involved_object_descriptions, Item.describe_short(object))
+            table.insert(involved_object_descriptions, Character.describe_short(object))
         end
     end
     return string.format(unformatted_description, table_to_args(involved_object_descriptions))
